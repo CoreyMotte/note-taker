@@ -37,5 +37,12 @@ app.post('/api/notes', function(req, res) {
     res.json(note);
 });
 
+app.delete('/api/notes/:id', function(req, res) {
+    id = parseInt(req.params.id)
+    noteList = noteList.filter(note => {return note.id !== id})
+    fs.writeFile(__dirname + '/db/db.json', JSON.stringify(noteList), (err) => {});
+    res.json(noteList)
+});
+
 app.listen(port);
 console.log(`Server started at http://localhost:${port}`);
