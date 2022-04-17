@@ -17,7 +17,7 @@
   ## Installation
   Clone the repository.
   ## Usage
-  Run index.js
+  Application is deployed [here](https://tranquil-shore-09769.herokuapp.com/). 
   ## How to Contribute
   [Contributor Covenant](https://www.contributor-covenant.org/)  
   N/A
